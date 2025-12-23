@@ -29,23 +29,26 @@ Built using **FastAPI, FAISS, Sentence Transformers, HuggingFace Transformers, S
 - **PDF Parsing**: pdfplumber / PyPDF2
 
 
+## 📂 Project Structure
+
 RAG_project/
 │
-├── backend/
-│ ├── rag.py
-│ ├── main.py
-│ ├── vector_store.py
-│ ├── pdf_loader.py
-│ ├── text_splitter.py
-│ └── data/
+├── backend/ # Backend API & RAG logic
+│ ├── rag.py # RAG pipeline (retrieval + generation)
+│ ├── main.py # FastAPI server entrypoint
+│ ├── vector_store.py # FAISS vector database management
+│ ├── pdf_loader.py # PDF parsing & text extraction
+│ ├── text_splitter.py # Document chunking for embeddings
+│ └── data/ # Local data storage
 │
-├── frontend/
-│ └── app.py
+├── frontend/ # Streamlit UI
+│ └── app.py # Chat interface
 │
-├── .env.example
-├── .gitignore
-├── requirements.txt
-└── README.md
+├── .env.example # Environment variables template
+├── .gitignore # Git ignore rules
+├── requirements.txt # Python dependencies
+└── README.md # You're reading it! 📖
+
 
 ⚙️ Setup Instructions
 
@@ -69,5 +72,4 @@ pip install -r requirements.txt
 cp .env.example .env
 Fill in your Neon PostgreSQL DATABASE_URL.
 
-## 📂 Project Structure
 
