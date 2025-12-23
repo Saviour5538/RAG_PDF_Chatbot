@@ -28,7 +28,7 @@ Built using **FastAPI, FAISS, Sentence Transformers, HuggingFace Transformers, S
 - **Database**: PostgreSQL (Neon)
 - **PDF Parsing**: pdfplumber / PyPDF2
 
----
+
 RAG_project/
 │
 ├── backend/
@@ -52,6 +52,7 @@ RAG_project/
  1️⃣ Clone the repository
  
 git clone https://github.com/Saviour5538/RAG_PDF_Chatbot.git
+
 cd RAG_PDF_Chatbot
 
 2️⃣ Create virtual environment
